@@ -3,6 +3,18 @@
 
 AI-Powered Campaign Creator for a Social Platform using LLM and RAG techniques.
 
+As Ad platform APIs such as LinkedIn Ads API and Meta Ads API require bussiness accounts and approval, hence I adapted to not using them, rather generated HTML templates simulating the original platforms.
+
+The project follows the following algorithm:
+- Input Data is taken from the Streamlit UI.
+- The data is passed through the script, and RAG framework is implemented on it, and thus an LLM generates a creative ad campaign following the instructions passed to it via the prompt.
+- The created JSON file is then processed, to extract information.
+- It is then sent to the UI through the html markdown text, and made available on the interface.
+- Buttons are available, to download the required JSON, CSV and HTML files.
+- Some "Model" campaigns are also provided in the interface. These are the trial data I tested my project on...
+
+
+Hope you guys like it!!!
 ---
 
 ## 🚀 Project Overview
