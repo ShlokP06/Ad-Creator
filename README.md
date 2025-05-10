@@ -73,8 +73,11 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 - **LLM vs Fine-Tuned Model**: We opted for prompt engineering with an existing API model for speed and flexibility.
 - **RAG Usage**: Enhances the model’s understanding without retraining.
 - **API Layer**: Abstracted in `ads.py` for easy switch between real and mock APIs.
+
+
 1.**Modular Design**:
-   Separation of Concerns: The code is split across three primary files (ads.py, rag.py, markdowns.py) to increase readability, maintainability, and testability.
+
+   Separation of Contents: The code is split across three primary files (ads.py, rag.py, markdowns.py) to increase readability, maintainability, and testability.
 
    - ads.py: Manages user input, streamlit UI, campaign orchestration.
  
