@@ -176,4 +176,4 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 ## 👤 Author
 
 > Your Name  
-> [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/ShlokP06)
+> [LinkedIn](https://www.linkedin.com/in/shlok-parikh-370773335/) | [GitHub](https://github.com/ShlokP06)
