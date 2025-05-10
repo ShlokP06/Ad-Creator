@@ -169,8 +169,7 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 - [x] Python scripts
 - [x] `.env` or `config.json`
 - [x] README with setup, logic, limitations
-- [ ] Campaign screenshots (optional)
-- [ ] Loom or video walkthrough (optional)
+- [x] Video
 
 ---
 
