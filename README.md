@@ -52,7 +52,7 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 5. **Start the Application**:
    - Run the following in the command prompt window inside the virtual environment
    ```bash
-   python -m strealit run ads.py
+   python -m streamlit run ads.py
    ```
 
 --- 
