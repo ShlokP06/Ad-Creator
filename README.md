@@ -159,6 +159,10 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 [Watch the video](https://drive.google.com/file/d/10cn2nQyhd2Dz67653bJeyDDLVALyIyeZ/view?usp=drive_link)
 
 ---
+## Future Updates
+- **API Integration** with platforms such as Meta Ads API, LinkedIn Ads API.
+- **Visual Quality** Allowing users to add images and videos to the add campaigns.
+---
 
 ## 📁 Deliverables Checklist
 
