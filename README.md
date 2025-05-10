@@ -73,39 +73,38 @@ This tool automates the creation of social media advertisement campaigns (Meta, 
 - **LLM vs Fine-Tuned Model**: We opted for prompt engineering with an existing API model for speed and flexibility.
 - **RAG Usage**: Enhances the model’s understanding without retraining.
 - **API Layer**: Abstracted in `ads.py` for easy switch between real and mock APIs.
-1. **Modular Design**:
+1.**Modular Design**:
+   Separation of Concerns: The code is split across three primary files (ads.py, rag.py, markdowns.py) to increase readability, maintainability, and testability.
 
-Separation of Concerns: The code is split across three primary files (ads.py, rag.py, markdowns.py) to increase readability, maintainability, and testability.
+   - ads.py: Manages user input, streamlit UI, campaign orchestration.
+ 
+   - rag.py: Handles context-based content generation using Retrieval-Augmented Generation (RAG).
 
-- ads.py: Manages user input, streamlit UI, campaign orchestration.
+   - markdowns.py: Responsible for formatting output into HTML, CSV, and JSON formats.
 
-- rag.py: Handles context-based content generation using Retrieval-Augmented Generation (RAG).
+2.**Use of RAG (Retrieval-Augmented Generation)**:
 
-- markdowns.py: Responsible for formatting output into HTML, CSV, and JSON formats.
+   - We opted for RAG over fine-tuning to:
 
-2. **Use of RAG (Retrieval-Augmented Generation)**:
+   - Keep model inference cost low.
 
-- We opted for RAG over fine-tuning to:
+   - Avoid needing GPU access or custom model training.
 
-- Keep model inference cost low.
+   - Dynamically inject up-to-date and domain-specific context from ad-related resources via vector stores.
 
-- Avoid needing GPU access or custom model training.
+3.**Local Vector Database (FAISS)**:
 
-- Dynamically inject up-to-date and domain-specific context from ad-related resources via vector stores.
+   - FAISS is used for its performance and offline capability.
 
-3. **Local Vector Database (FAISS)**:
+   - Allows flexible, scalable retrieval from web-scraped knowledge sources.
 
-- FAISS is used for its performance and offline capability.
+   - Can be extended to add user-specific corpora in the future.
 
-- Allows flexible, scalable retrieval from web-scraped knowledge sources.
+4.**Streamlit UI**:
 
-- Can be extended to add user-specific corpora in the future.
+   - Chosen for rapid prototyping and seamless input/output display.
 
-4. **Streamlit UI**:
-
-- Chosen for rapid prototyping and seamless input/output display.
-
-- Allows interactive brief entry, ad preview rendering, and multi-format downloads without backend setup.
+   - Allows interactive brief entry, ad preview rendering, and multi-format downloads without backend setup.
 
 ---
 
