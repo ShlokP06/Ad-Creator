@@ -1,5 +1,5 @@
 
-# atomicads-ai-engineer-assignment
+# Ad-Creator
 
 AI-Powered Campaign Creator for a Social Platform using LLM and RAG techniques.
 
